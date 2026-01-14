@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+   
+    .container{
+        display:flex;
+        border:1px solid;
+    }
+    .column{
+        flex:25%;
+        padding:10px;
+        border:1px solid black;
+
+    }
+    @media only screen and (max-width:700px){
+            .column{
+               flex:20%
+            }
+    }
+    @media only screen and (max-width:600px) {
+        .container{
+            flex-direction:column;
+            p{
+            color:red;
+            }
+        }
+    }
+    @media only screen and (min-width:800px) {
+        p{
+            color:gray;
+        }
+    }
+    @media only screen and (min-width:850px) {
+        p{
+            color:blue;
+        }
+    }
+   </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="column">
+            <p>this is paragraph</p>
+        </div>
+         <div class="column">
+            <p>this is paragraph</p>
+        </div>
+         <div class="column">
+            
+            <p>this is paragraph</p>
+        </div>
+         <div class="column">
+            <p>this is paragraph</p>
+        </div>
+    </div>
+</body>
+</html>
